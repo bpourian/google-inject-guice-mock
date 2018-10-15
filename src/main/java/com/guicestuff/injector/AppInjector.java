@@ -1,6 +1,7 @@
 package com.guicestuff.injector;
 
 import com.google.inject.AbstractModule;
+import com.guicestuff.services.EmailService;
 import com.guicestuff.services.FacebookService;
 import com.guicestuff.services.MessageService;
 
@@ -13,8 +14,9 @@ public class AppInjector extends AbstractModule {
         //bind(MessageService.class).to(EmailService.class);
 
         //bind MessageService to Facebook Message implementation
-        bind(MessageService.class).to(FacebookService.class);
+//        bind(MessageService.class).to(FacebookService.class);
 
-
+        //bind MessageService to Email Message implementation
+        bind(MessageService.class).to(EmailService.class);
     }
 }
