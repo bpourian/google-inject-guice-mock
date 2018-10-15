@@ -1,6 +1,6 @@
 package com.guicestuff.services;
 
-public interface MessageServices {
+public interface MessageService {
 
     boolean sendMessage(String msg, String recipient);
 }

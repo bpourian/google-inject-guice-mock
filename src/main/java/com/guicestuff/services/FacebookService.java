@@ -8,11 +8,11 @@ import com.google.inject.Singleton;
 only one object (an instance of the class) at a time. */
 
 @Singleton
-public class EmailService implements MessageService {
+public class FacebookService implements MessageService {
 
     public boolean sendMessage(String msg, String recipient) {
 
-        System.out.println("Email Message sent to " + recipient + " with message=" + msg);
+        System.out.println("Message sent to Facebook user "+recipient+" with message="+msg);
 
         return true;
     }
